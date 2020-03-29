@@ -1,0 +1,17 @@
+# OS-PROJECT-DEMAND-PAGED
+
+21- QUESTION->
+Consider a scenario of demand paged memory. Page table is held in registers. It takes
+8 milliseconds to service a page fault if an empty page is available or the replaced page is not
+modified and 20 milliseconds if the replaced page is modified. Memory access time is 100
+nanoseconds. Assume that the page to be replaced is modified 70 percent of the time. Generate a
+solution to find maximum acceptable page-fault rate for access time that is not more than 200
+nanoseconds.
+
+
+SOLUTION->
+sec=(1−P)×0.1sec + (0.3P)×8 millisec + (0.7P)×20 millisec
+0.1= −0.1P+ 2400P+ 14000P
+0.116,400P
+P0.000006
+P->page Fault Rate
